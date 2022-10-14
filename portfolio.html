@@ -16,79 +16,88 @@
 
 
 <body>
-    <!--HEADER----------------------------->
-
-    <header class="header">
-        <nav class="header-navigation">
-            <a class="link logo" href=""><span>Web</span><span>Studio</span></a>
-            <ul class="list header-list">
-                <li><a href="/index.html"> Студія</a></li>
-                <li><a href="/portfolio.html">Портфоліо</a></li>
-                <li><a href="">Контакти</a></li>
-            </ul>
-        </nav>
-        <ul class="list contact">
-            <li><a class="heder-tel link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            <li><a class="header-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+<!--HEADER----------------------------->
+<header class="header">
+    <nav class="header-navigation">
+        <a class="link header-logo" href=""><span class="logo">Web</span><span class="logo2">Studio</span></a>
+        <ul class="list header-list">
+            <li class="header-item">
+                <a class="link header-link" href="/index.html"> Студія</a>
+            </li>
+            <li class="header-item">
+                <a class="link header-link" href="/portfolio.html">Портфоліо</a>
+            </li>
+            <li class="header-item">
+                <a class="link header-link" href="">Контакти</a>
+            </li>
         </ul>
-    </header>
+    </nav>
+    <ul class="list contact">
+        <li><a class="header-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li><a class="header-tel link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+    </ul>
+</header>
 
 <!--MAIN----------------------------------->
 
 <main>
     <section class="main-portfolio">
-    <h1 class="title-portfolio">Наші роботи</h1>
-    <ul class="list-btn">
+    <h1 class="title-portfolio">Наші роботи</h1><!--display:none-->
+
+    <ul class="list list-btn">
         <li class="btn-element"><button class="main-btn pointer">Усі</button></li>
         <li class="btn-element"><button class="main-btn pointer">Веб-сайти</button></li>
         <li class="btn-element"><button class="main-btn pointer">Додатки</button></li>
         <li class="btn-element"><button class="main-btn pointer">Дизайн</button></li>
         <li class="btn-element"><button class="main-btn pointer">Маркетинг</button></li>
     </ul>
-    <ul class="list-portfolio">
-        <li>
+    
+    <!--Hero--------------------->
+
+    <ul class="list list-portfolio">
+        <li class="flex-element">
             <img src="/images/web-site.jpg" alt="" width="370" height="294" >
-            <h2>Технокряк</h2>
-            <p>Веб-сайт</p></li>
-            <li>
+            <h2 class="hero-subtitle">Технокряк</h2>
+            <p class="hero-text">Веб-сайт</p></li>
+            <li class="flex-element">
                 <img src="/images/basketball.jpg" alt="" width="370" height="294">
-                <h2>Постер New Orlean vs Golden Star</h2>
-                <p>Дизайн</p>
+                 <h2 class="hero-subtitle">Постер New Orlean vs Golden Star</h2>
+                <p class="hero-text">Дизайн</p>
             </li>
-            <li>
+            <li class="flex-element">
                 <img src="/images/fish.jpg" alt="" width="370" height="294">
-                <h2>Ресторан Seafood</h2>
-                <p>Додаток</p>
+                <h2 class="hero-subtitle">Ресторан Seafood</h2>
+                <p class="hero-text">Додаток</p>
             </li>
-            <li>
+            <li class="flex-element">
                 <img src="/images/headphones.jpg" alt="" width="370" height="294">
-                <h2>Проєкт Prime</h2>
-                <p>Маркетинг</p>
+                <h2 class="hero-subtitle">Проєкт Prime</h2>
+                <p class="hero-text">Маркетинг</p>
             </li>
-            <li>
+            <li class="flex-element">
                 <img src="/images/box.jpg" alt="" width="370" height="294">
-                <h2>Проєкт Boxes</h2>
-                <p>Додаток</p>
+                <h2 class="hero-subtitle">Проєкт Boxes</h2>
+                <p class="hero-text">Додаток</p>
             </li>
-            <li>
+            <li class="flex-element">
                 <img src="/images/screen.jpg" alt="" width="370" height="294">
-                <h2 lang="en">Inspiration has no Borders</h2>
-                <p>Веб-сайт</p>
+                <h2 class="hero-subtitle" lang="en">Inspiration has no Borders</h2>
+                <p class="hero-text">Веб-сайт</p>
             </li>
-            <li>
+            <li class="flex-element">
                 <img src="/images/magazine.jpg" alt="" width="370" height="294">
-                <h2>Видання Limited Edition</h2>
-                <p>Дизайн</p>
+                <h2 class="hero-subtitle">Видання Limited Edition</h2>
+                <p class="hero-text">Дизайн</p>
             </li>
-            <li>
+            <li class="flex-element">
                 <img src="/images/label.jpg" alt="" width="370" height="294">
-                <h2>Проєкт LAB</h2>
-                <p>Маркетинг</p>
+                <h2 class="hero-subtitle">Проєкт LAB</h2>
+                <p class="hero-text">Маркетинг</p>
             </li>
-            <li>
+            <li class="flex-element">
                 <img src="/images/laptop.jpg" alt="" width="370" height="294">
-                <h2>Growing Business</h2>
-                <p>Додаток</p>
+                <h2 class="hero-subtitle">Growing Business</h2>
+                <p class="hero-text">Додаток</p>
             </li>
     </ul>
     </section>
@@ -99,8 +108,8 @@
 <!-- FOOTER-------------------------->
 
 <footer class="footer">
-    <a class="link-footer" href=""><span>Web</span><span>Studio</span></a>
-    <ul class="list-adress">
+    <a class="link footer-logo" href=""><span class="logo-footer">Web</span><span class="logo-footer2">Studio</span></a>
+    <ul class="list list-adress">
         <li class="adress"><a class="link footer-adress" href="https://goo.gl/maps/az3UDY5ZYRjnCUFE9" target="_blank"
                 rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a></li>
         <li class="adress"><a class="link footer-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
