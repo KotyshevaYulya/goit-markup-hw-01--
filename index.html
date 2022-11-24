@@ -9,13 +9,17 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
             rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="/css/styles.css">
     </head>
     
-    
+     
     <body>
 <!--HEADER----------------------------->
         <header class="header">
+            <div class="container header-container">
             <nav class="header-navigation">
                 <a class="link header-logo" href=""><span class="logo">Web</span><span class="logo2">Studio</span></a>
                 <ul class="list header-list">
@@ -29,21 +33,25 @@
                         <a class="link header-link" href="">Контакти</a>
                     </li>
                 </ul></nav>
+                <div class="header-contact">
                 <ul class="list contact">
                     <li><a class="header-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                     <li><a class="header-tel link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    </div>
     </ul>
+    </div>
     </header>
 <!-- HERO----------------------------> 
     <main>
         <section class="hero">
-        <div>
-        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+        <div class="hero-container">
+        <h1 class=  "hero-title">Ефективні рішення для вашого бізнесу</h1>
         <button class="hero-btn" type ="button">Замовити послугу</button>
         </div>
-        </section>
+       </section>
 <!--ABOUT------------------------------>
-            <section class="about">
+            <section class="about ">
+                <div class="about-container container">
         <ul class="list">
             <li class="about-element">
                 <h2 class="about-title">УВАГА ДО ДЕТАЛЕЙ</h2>
@@ -62,50 +70,69 @@
                 <p class="about-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
             </li>
         </ul>
+        </div>
         </section>
       
 
-        <section class="about-list">
+        <section class="about-list" >
+           <div class="container container-about-list"">
         <h2 class="about-title2">Чим ми займаємося</h2>
         <ul class="list">
         <li class="about-img"><img src="/images/tayping.jpg" alt="ноутбук" width="370"></li>
         <li class="about-img"><img src="/images/project.jpg" alt="екран" width="370"></li>
         <li class="about-img"><img src="/images/tablet.jpg" alt="планшет" width="370"></li>
         </ul>
+        </div>
         </section>
 <!--MAIN--------------------->
         <section class="main">
+            <div class="container">
         <h2 class="main-title">Наша команда</h2>
-        <ul class="list">
-            <li class="main-element"> <img class="main-img" src="/images/igor.jpg" alt="зображення чоловіка" width="270"> 
+        
+        <ul class="list main-list">
+                <li class="main-element"> <img class="main-img" src="/images/igor.jpg" alt="зображення чоловіка" width="270"> 
+                <div class="main-description">
                 <h2 class="main-subtitle">Ігор Дем'яненко</h2>
-                <p class="main-text" lang="en">Product Designer</p></li>
-            <li class="main-element"> <img class="main-img" src="/images/olga.jpg" alt="зображення жінки" width="270">
-            <h2 class="main-subtitle">Ольга Рєпіна</h2>
-            <p class="main-text" lang="en">Frontend Developer</p></li>
+                <p class="main-text" lang="en">Product Designer</p>
+            </div>
+        </li>
+                <li class="main-element"> <img class="main-img" src="/images/olga.jpg" alt="зображення жінки" width="270">
+                <div class="main-description">
+                <h2 class="main-subtitle">Ольга Рєпіна</h2>
+                <p class="main-text" lang="en">Frontend Developer</p>
+        </div>
+    </li>
             <li class="main-element">
                 <img class="main-img" src="/images/mykola.jpg" alt="зображення чоловіка" width="270">
+                <div class="main-description">
                 <h2 class="main-subtitle">Микола Тарасов</h2>
                 <p class="main-text" lang="en">Marketing</p>
-            </li>
+            
+            </div>
+        </li>
             <li class="main-element">
                 <img class="main-img" src="/images/mikhaylo.jpg" alt="зображення чоловіка" width="270">
+                <div class="main-description">
                 <h2 class="main-subtitle">Михайло Єрмаков</h2>
                 <p class="main-text" lang="en">UI Designer</p>
-            </li>
+            </div>
+        </li>
         </ul>
+        </div>
         </section>
     </main>
 
 <!-- FOOTER-------------------------->
 
     <footer class="footer">
-    <a class="link footer-logo" href=""><span class="logo-footer">Web</span><span class="logo-footer2">Studio</span></a>
-        <ul class="list list-adress">
+        <div class="footer-container container">
+    <a class="link-footer" href=""><span class="logo-footer">Web</span><span class="logo-footer2">Studio</span></a>
+        <ul class="list-adress">
             <li class="adress"><a class="link footer-adress" href="https://goo.gl/maps/az3UDY5ZYRjnCUFE9" target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a></li>
             <li class="adress"><a class="link footer-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             <li class="adress"><a class="link footer-tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>    
+        </div>
     </footer>
 </body>
 </html>
