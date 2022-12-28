@@ -140,12 +140,18 @@ body  {
 /*---------------------HERO-----------------------------*/
 .hero {
     background-color: #2F303A;
-        padding: 200px 452px 200px 452px;
-}
-/* .hero-container{
-    background-color: #2F303A;
+    max-width: 1600px;
     padding: 200px 452px 200px 452px;
-} */
+    background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+    ),
+    url(/images/background.jpg);
+    background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+}
+
 
 .hero-title {
     font-weight: 900;
@@ -238,6 +244,14 @@ body  {
     margin-right: 30px;
 }
 
+.about-item {
+width: 270px;
+height: 120px;
+background-color: #F5F4FA;
+border-radius: 4px ;
+margin-bottom: 30px;
+
+}
 /*MAIN-----------------------*/
 
 .main {
@@ -395,7 +409,6 @@ body  {
         min-width: 112px;
         min-height: 38px;
         padding: 6px 22px;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
 
  .btn-element:not(:last-child) {
@@ -413,6 +426,7 @@ body  {
  .main-btn:hover, .main-btn:focus {
         color: #FFFFFF;
         background-color: var(--accent-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
      }
 
         /*-----------------PORTFOLIO HERO----------------------*/
@@ -464,4 +478,17 @@ body  {
         color: var(--main-text-color);
 }
 
-
+/* --------------ставлю іконки--------------------- */
+/* 
+.about-element::before  {
+    margin-bottom: 30px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    display: block;
+    content: "";
+    height: 120px;
+    background-image: url(../icons/antenna.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+} */
