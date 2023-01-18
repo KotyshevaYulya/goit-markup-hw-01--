@@ -110,17 +110,28 @@ body  {
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
-        color: var(--header-text-color);
-        
+        color: #757575;
+        display: flex;
+            align-items: center;
+            justify-content: center;
 }
+
+
 
 .header-tel {
     font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
-        color: var(--header-text-color);
+        color: #757575;
         margin-left: 50px;
+        display: flex;
+            align-items: center;
+            justify-content: center;
+} 
+
+.contact-icon {
+    fill: currentColor;
 }
 
 
@@ -136,6 +147,10 @@ body  {
 
 .header {
     border-bottom: 1px solid #ECECEC;
+}
+
+.contact-icon {
+    margin-right: 10px;
 }
 /*---------------------HERO-----------------------------*/
 .hero {
@@ -250,8 +265,11 @@ height: 120px;
 background-color: #F5F4FA;
 border-radius: 4px ;
 margin-bottom: 30px;
-
+display: flex;
+align-items: center;
+justify-content: center;
 }
+
 /*MAIN-----------------------*/
 
 .main {
@@ -301,7 +319,9 @@ margin-bottom: 30px;
 
 .main-description {
         padding-top: 30px;
+        padding-right: 32px;
         padding-bottom: 30px;
+        padding-left: 32px;
 }
 
 .main-element {
@@ -310,12 +330,102 @@ margin-bottom: 30px;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
 }
+
+.main-social-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;  
+    
+}
+
+.main-item {
+    width: 44px;
+    height: 44px;
+    
+}
+
+.main-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #AFB1B8;
+}
+
+
+.main-social-icon {
+    fill: currentColor;
+}
+
+
+.main-link:hover,
+.main-link:focus {
+    background-color: var(--accent-color);
+    border-radius: 50px;
+    color: #FFFFFF;
+}
+
+.main-item:not(:last-child) {
+    margin-right: 10px;
+}
+/* --------------MAIN 2 -------------------- */
+.main2 {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.main2-title {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--main-title-color);
+}
+
+.main-company-items {
+    width: 170px;
+    height: 92px;
+}
+.main-company-link  {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #AFB1B8;
+}
+
+
+.main-company-icon {
+    fill: currentColor;
+}
+
+.main-company-link:hover,
+.main-company-link:focus {
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    color: var(--accent-color);
+}
+
+.main-company-items:not(:last-child) {
+    margin-right: 30px;
+}
 /*FOOTER--------------------------*/
 
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
     background: #2F303A;  
+}
+
+.footer-container {
+    display: flex;
 }
 
 .list-adress {
@@ -380,9 +490,51 @@ margin-bottom: 30px;
 }
 
 
+.footer-item {
+   margin-left: 70px;
+   padding-top: 12px; 
+}
 
+.footer-title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    
+        color: #FFFFFF;
 
+        margin-bottom: 20px;
+}
 
+.footer-social-item {
+    width: 44px;
+    height: 44px;
+}
+
+.footer-social-link {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.footer-social-icon {
+    fill: currentColor;
+}
+
+.footer-social-link:hover, 
+.footer-social-link:focus {
+    background-color: var(--accent-color);
+}
+ 
+.footer-social-item + .footer-social-item {
+    margin-left: 10px;
+}
 /*--------------Portfolio-----------------*/
 
 /*MAIN*/
@@ -478,17 +630,7 @@ margin-bottom: 30px;
         color: var(--main-text-color);
 }
 
-/* --------------ставлю іконки--------------------- */
-/* 
-.about-element::before  {
-    margin-bottom: 30px;
-    background: #F5F4FA;
-    border-radius: 4px;
-    display: block;
-    content: "";
-    height: 120px;
-    background-image: url(../icons/antenna.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-} */
+.flex-element:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
